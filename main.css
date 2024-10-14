@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 10px;
+}
+.fundo{
+    /* background: linear-gradient(100deg, rgba(226, 139, 139, 0.356) 4% , rgba(0, 0, 0, 0.049) 100%); */
+    /* padding: 30px; */
+    /* border-radius: 10px 5px; */
+    padding: 1px 0px;
+    /* border-bottom: 2px solid #40353a; */
+}
+.ok{
+    margin: 10px;
+    border: 0px;
+}
+
+P {
+    font-size: 10PX;
+    padding-bottom: 1px;
+    border-bottom: 1px;
+    margin: 0px 0px 0px 20px; 
+}
+
+    .texto {
+        background: #efbcbc;
+        width: 90px;
+        borderbottom: 10px 10px red;
+        border: solid 0px ;
+        border-radius: 10px;
+        padding: 1px 18px;
+    }
+
+.container, section
+,.banner2 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+ }
+ section li ,a{
+    display: flex;
+    text-decoration: none;
+    margin: 1px 10px ;
+}
+
+
+section{
+ border-radius: 19px;
+}
+
+section a{
+    font-family:sans-serif;
+    /* border:  rgb(180, 153, 153); */
+    padding: 2px 28px;
+    /* margin: 4px; */
+    color: rgb(0, 0, 0);
+    border-bottom: rgb(227, 227, 227);
+    animation: pisca 1.5s infinite;
+    box-shadow: 0px 0px 1px 1px #ff6c6c;
+}
+
+section a:hover{
+    animation: pisca 1.5s infinite;
+    box-shadow: 0px 0px 8px 1px #403737;
+}
+
+
+section li a{
+    border-radius: 8px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    margin: 2px 10px;
+}
+  
+  /* Estilos específicos para a versão desktop (largura a partir de 767px) */
+  @media only screen and (min-width: 767px) {
+    .mobile-banner {
+      display: none;
+
+    }
+
+    }
+
+    .banner2 img{
+        height: 100px;
+        margin: 1px 500px;
+        border-radius: 20px;  
+    }
+
+   
+
+  /* Estilos específicos para a versão móvel (largura menor que 767px) */
+  @media only screen and (max-width: 766px) {
+    .desktop-banner {
+      display: none;
+     }
+
+     .banner2 img {
+        height: 80px;
+        border-radius: 20px;
+        margin: auto;
+     }
+    }
